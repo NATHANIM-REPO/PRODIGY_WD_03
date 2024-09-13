@@ -1,0 +1,1 @@
+let playerText = document.getElementById('player-tick')

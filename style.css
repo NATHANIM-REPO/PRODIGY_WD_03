@@ -23,7 +23,7 @@ h1{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: 37505c;
+    background-color: #37505c;
 }
 #gameBoard{
     width: 450px;
@@ -42,7 +42,24 @@ h1{
     border-right: 2px solid;
     border-bottom: 2px solid;
 }
-box:nth-child(3n){
+.box:nth-child(3n){
     border-right: none;
 }
-box:nth-child(6)
+.box:nth-child(6) ~ .box{
+    border-bottom: none;
+}
+#RestartBtn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    color: #333;
+    border-color: var(--orange);
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600;
+}
+#RestartBtn:hover{
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
