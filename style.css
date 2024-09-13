@@ -48,7 +48,7 @@ h1{
 .box:nth-child(6) ~ .box{
     border-bottom: none;
 }
-#RestartBtn{
+#restartBtn{
     padding: 10px 20px;
     border-radius: 10px;
     background-color: var(--orange);
@@ -58,7 +58,7 @@ h1{
     transition: 200ms transform;
     font-weight: 600;
 }
-#RestartBtn:hover{
+#restartBtn:hover{
     transform: translateY(-2px);
     cursor: pointer;
 }
