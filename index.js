@@ -22,7 +22,7 @@ if(!spaces[id]){
         playerText = `${currentPlayer} has won!`
         let winning_blocks = playerHasWon()
 
-       winning_blocks.map( block => boxes[box].style.backgroundcolor=winnerIndicator)
+       winning_blocks.map( box => boxes[box].style.backgroundColor=winnerIndicator)
        return
     }
     currentPlayer = currentPlayer == X_TEXT ? O_TEXT : X_TEXT
@@ -53,12 +53,14 @@ return false
 
 
 restartBtn.addEventListener('click', restart)
+
 function restart(){
     spaces.fill (null)
     boxes.forEach(box => {
         box.innerText = ''
-        box.style.backgroundcolor = ''
+        box.style.backgroundColor = ''
     })
+
     playerText = 'Tic Tac Toe'
     currentPlayer = X_TEXT
 }
