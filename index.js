@@ -6,3 +6,11 @@ const O_TEXT = 'O'
 const X_TEXT = 'X'
  
 let current_player = 'X_TEXT'
+let spaces = Array(9).fill(null)
+const startGame = () => {
+    boxes.forEach(box => box.addEventListener('click', boxClicked))
+}
+function boxClicked(e){
+con
+}
+startGame()
